@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (4.7.3)
+  - BRYXBanner (0.8.3)
+  - Crashlytics (3.10.9):
+    - Fabric (~> 1.7.13)
+  - Fabric (1.7.13)
+  - SwifterSwift (4.6.0):
+    - SwifterSwift/AppKit (= 4.6.0)
+    - SwifterSwift/CoreGraphics (= 4.6.0)
+    - SwifterSwift/CoreLocation (= 4.6.0)
+    - SwifterSwift/Foundation (= 4.6.0)
+    - SwifterSwift/MapKit (= 4.6.0)
+    - SwifterSwift/SpriteKit (= 4.6.0)
+    - SwifterSwift/SwiftStdlib (= 4.6.0)
+    - SwifterSwift/UIKit (= 4.6.0)
+  - SwifterSwift/AppKit (4.6.0)
+  - SwifterSwift/CoreGraphics (4.6.0)
+  - SwifterSwift/CoreLocation (4.6.0)
+  - SwifterSwift/Foundation (4.6.0)
+  - SwifterSwift/MapKit (4.6.0)
+  - SwifterSwift/SpriteKit (4.6.0)
+  - SwifterSwift/SwiftStdlib (4.6.0)
+  - SwifterSwift/UIKit (4.6.0)
+  - TagListView (1.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7.3)
+  - BRYXBanner
+  - Crashlytics (~> 3.10.9)
+  - SwifterSwift
+  - TagListView (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - BRYXBanner
+    - Crashlytics
+    - Fabric
+    - SwifterSwift
+    - TagListView
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  BRYXBanner: 8cf1b119792e1cee8d7ba107297ef89f7409bc53
+  Crashlytics: 55e24fc23989680285a21cb1146578d9d18e432c
+  Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
+  SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
+  TagListView: 0c7e9c26b9aff858224ee6b155f5fcacd9e27c83
+
+PODFILE CHECKSUM: 40adfa157fad1cf55195f4a05346a77d45f0499b
+
+COCOAPODS: 1.5.3
