@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B3B9AD30633627041A2D3BC /* Pods_LucrezCeva.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4162CF95F85D3B12F40AC7B6 /* Pods_LucrezCeva.framework */; };
+		F3164DB121AC3BF100D06251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3164DB021AC3BF100D06251 /* AppDelegate.swift */; };
+		F3164DB921AC3BF100D06251 /* LucrezCeva.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3164DB721AC3BF100D06251 /* LucrezCeva.xcdatamodeld */; };
+		F3164DBB21AC3BF300D06251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3164DBA21AC3BF300D06251 /* Assets.xcassets */; };
+		F3164DBE21AC3BF300D06251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3164DBC21AC3BF300D06251 /* LaunchScreen.storyboard */; };
+		F3164DC821AC3C4100D06251 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3164DC721AC3C4100D06251 /* LoginViewController.swift */; };
+		F3164DCA21AC3C5400D06251 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3164DC921AC3C5400D06251 /* LoginViewController.storyboard */; };
+		F3164DCD21AC3C8500D06251 /* CreateAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3164DCC21AC3C8500D06251 /* CreateAccountViewController.storyboard */; };
+		F3164DCF21AC3C9300D06251 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3164DCE21AC3C9300D06251 /* CreateAccountViewController.swift */; };
+		F3164DD221AC3D1500D06251 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3164DD121AC3D1500D06251 /* Storyboards.swift */; };
+		F3164DD521AC3D3D00D06251 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3164DD421AC3D3D00D06251 /* BaseViewController.swift */; };
+		F3164DD721AC420B00D06251 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3164DD621AC420B00D06251 /* Colors.swift */; };
+		F3164DD921AC421400D06251 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3164DD821AC421400D06251 /* Strings.swift */; };
+		F3164DDF21AC4F1500D06251 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3164DDD21AC4F1500D06251 /* ViewController.swift */; };
+		F3164DE021AC4F1500D06251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3164DDE21AC4F1500D06251 /* Main.storyboard */; };
+		F3164DE321AC519700D06251 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3164DE221AC519700D06251 /* Logger.swift */; };
+		F3400AAA21B5C5CC00903545 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3400AA921B5C5CC00903545 /* Colors.xcassets */; };
+		F3400AAD21B5C68500903545 /* CompleteAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3400AAC21B5C68500903545 /* CompleteAccountViewController.swift */; };
+		F3400AAF21B5C69400903545 /* CompleteAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3400AAE21B5C69400903545 /* CompleteAccountViewController.storyboard */; };
+		F3400AB121B5C77600903545 /* GradientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3400AB021B5C77600903545 /* GradientExtension.swift */; };
+		F3400AB421B5D1C000903545 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3400AB321B5D1C000903545 /* TextFieldExtension.swift */; };
+		F3400AB621B5DA8800903545 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3400AB521B5DA8800903545 /* PrimaryButton.swift */; };
+		F3400AB821B5DE1900903545 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3400AB721B5DE1900903545 /* HideKeyboardExtension.swift */; };
+		F3400ABA21B5E01E00903545 /* BasePhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3400AB921B5E01E00903545 /* BasePhotoPickerViewController.swift */; };
+		F3B75E1A21C433A000482CD0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E1921C433A000482CD0 /* Coordinator.swift */; };
+		F3B75E1C21C4340600482CD0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E1B21C4340600482CD0 /* AppCoordinator.swift */; };
+		F3B75E1E21C4343800482CD0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E1D21C4343800482CD0 /* MainCoordinator.swift */; };
+		F3B75E2021C4353C00482CD0 /* CreateAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E1F21C4353C00482CD0 /* CreateAccountCoordinator.swift */; };
+		F3B75E2421C436AE00482CD0 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E2321C436AE00482CD0 /* ViewControllerExtension.swift */; };
+		F3B75E2721C4382600482CD0 /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E2621C4382600482CD0 /* CreateAccountViewModel.swift */; };
+		F3B75E2921C439DB00482CD0 /* LoginFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E2821C439DB00482CD0 /* LoginFlowController.swift */; };
+		F3B75E2B21C43B9800482CD0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E2A21C43B9800482CD0 /* LoginViewModel.swift */; };
+		F3B75E2F21C441AB00482CD0 /* CompleteAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E2E21C441AB00482CD0 /* CompleteAccountViewModel.swift */; };
+		F3B75E3121C44DBC00482CD0 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E3021C44DBC00482CD0 /* LoginCoordinator.swift */; };
+		F3CD5C5921D3C88A005A2213 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5C5821D3C88A005A2213 /* UIWindow.swift */; };
+		F3CD5C5E21D3E7F0005A2213 /* HomeFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5C5D21D3E7F0005A2213 /* HomeFlowController.swift */; };
+		F3CD5C6021D3E7FB005A2213 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5C5F21D3E7FB005A2213 /* HomeViewController.swift */; };
+		F3CD5C6221D3E804005A2213 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CD5C6121D3E804005A2213 /* HomeViewController.storyboard */; };
+		F3CD5C6421D3E813005A2213 /* AddJobFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5C6321D3E813005A2213 /* AddJobFlowController.swift */; };
+		F3CD5C6621D3E81F005A2213 /* AddJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5C6521D3E81F005A2213 /* AddJobViewController.swift */; };
+		F3CD5C6821D3E82C005A2213 /* AddJobViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CD5C6721D3E82C005A2213 /* AddJobViewController.storyboard */; };
+		F3CD5C6A21D3E842005A2213 /* SettingsFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5C6921D3E842005A2213 /* SettingsFlowController.swift */; };
+		F3CD5C6C21D3E84B005A2213 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5C6B21D3E84B005A2213 /* SettingsViewController.swift */; };
+		F3CD5C6E21D3E853005A2213 /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CD5C6D21D3E853005A2213 /* SettingsViewController.storyboard */; };
+		F3CD5C7021D539D6005A2213 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5C6F21D539D6005A2213 /* BaseTabBarController.swift */; };
+		F3CD5C7221D5492E005A2213 /* UISearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5C7121D5492E005A2213 /* UISearchBarExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02D75A6C26F5E370BF4920E5 /* Pods-LucrezCeva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LucrezCeva.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LucrezCeva/Pods-LucrezCeva.debug.xcconfig"; sourceTree = "<group>"; };
+		4162CF95F85D3B12F40AC7B6 /* Pods_LucrezCeva.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LucrezCeva.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DAC636BE3A45FC45FEFC003 /* Pods-LucrezCeva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LucrezCeva.release.xcconfig"; path = "Pods/Target Support Files/Pods-LucrezCeva/Pods-LucrezCeva.release.xcconfig"; sourceTree = "<group>"; };
+		F3164DAD21AC3BF100D06251 /* LucrezCeva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LucrezCeva.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3164DB021AC3BF100D06251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3164DB821AC3BF100D06251 /* LucrezCeva.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LucrezCeva.xcdatamodel; sourceTree = "<group>"; };
+		F3164DBA21AC3BF300D06251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3164DBD21AC3BF300D06251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3164DBF21AC3BF300D06251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3164DC721AC3C4100D06251 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F3164DC921AC3C5400D06251 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		F3164DCC21AC3C8500D06251 /* CreateAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccountViewController.storyboard; sourceTree = "<group>"; };
+		F3164DCE21AC3C9300D06251 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		F3164DD121AC3D1500D06251 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		F3164DD421AC3D3D00D06251 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F3164DD621AC420B00D06251 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F3164DD821AC421400D06251 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		F3164DDD21AC4F1500D06251 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3164DDE21AC4F1500D06251 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F3164DE221AC519700D06251 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		F3400AA921B5C5CC00903545 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F3400AAC21B5C68500903545 /* CompleteAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteAccountViewController.swift; sourceTree = "<group>"; };
+		F3400AAE21B5C69400903545 /* CompleteAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompleteAccountViewController.storyboard; sourceTree = "<group>"; };
+		F3400AB021B5C77600903545 /* GradientExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientExtension.swift; sourceTree = "<group>"; };
+		F3400AB321B5D1C000903545 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		F3400AB521B5DA8800903545 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		F3400AB721B5DE1900903545 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		F3400AB921B5E01E00903545 /* BasePhotoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePhotoPickerViewController.swift; sourceTree = "<group>"; };
+		F3B75E1921C433A000482CD0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F3B75E1B21C4340600482CD0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F3B75E1D21C4343800482CD0 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		F3B75E1F21C4353C00482CD0 /* CreateAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountCoordinator.swift; sourceTree = "<group>"; };
+		F3B75E2321C436AE00482CD0 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		F3B75E2621C4382600482CD0 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		F3B75E2821C439DB00482CD0 /* LoginFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowController.swift; sourceTree = "<group>"; };
+		F3B75E2A21C43B9800482CD0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F3B75E2E21C441AB00482CD0 /* CompleteAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteAccountViewModel.swift; sourceTree = "<group>"; };
+		F3B75E3021C44DBC00482CD0 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		F3CD5C5821D3C88A005A2213 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
+		F3CD5C5D21D3E7F0005A2213 /* HomeFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowController.swift; sourceTree = "<group>"; };
+		F3CD5C5F21D3E7FB005A2213 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F3CD5C6121D3E804005A2213 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		F3CD5C6321D3E813005A2213 /* AddJobFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJobFlowController.swift; sourceTree = "<group>"; };
+		F3CD5C6521D3E81F005A2213 /* AddJobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJobViewController.swift; sourceTree = "<group>"; };
+		F3CD5C6721D3E82C005A2213 /* AddJobViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddJobViewController.storyboard; sourceTree = "<group>"; };
+		F3CD5C6921D3E842005A2213 /* SettingsFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFlowController.swift; sourceTree = "<group>"; };
+		F3CD5C6B21D3E84B005A2213 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F3CD5C6D21D3E853005A2213 /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		F3CD5C6F21D539D6005A2213 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		F3CD5C7121D5492E005A2213 /* UISearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3164DAA21AC3BF100D06251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3B9AD30633627041A2D3BC /* Pods_LucrezCeva.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B3B0FB210C8712AAC818479 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4162CF95F85D3B12F40AC7B6 /* Pods_LucrezCeva.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E09A6B8CFD9540791B60F826 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02D75A6C26F5E370BF4920E5 /* Pods-LucrezCeva.debug.xcconfig */,
+				9DAC636BE3A45FC45FEFC003 /* Pods-LucrezCeva.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3164DA421AC3BF100D06251 = {
+			isa = PBXGroup;
+			children = (
+				F3164DAF21AC3BF100D06251 /* LucrezCeva */,
+				F3164DAE21AC3BF100D06251 /* Products */,
+				E09A6B8CFD9540791B60F826 /* Pods */,
+				4B3B0FB210C8712AAC818479 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3164DAE21AC3BF100D06251 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3164DAD21AC3BF100D06251 /* LucrezCeva.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3164DAF21AC3BF100D06251 /* LucrezCeva */ = {
+			isa = PBXGroup;
+			children = (
+				F3B75E2521C437B300482CD0 /* viewModels */,
+				F3B75E1721C4337300482CD0 /* flowControllers */,
+				F3164DD021AC3D0100D06251 /* utils */,
+				F3164DC521AC3C1600D06251 /* view */,
+				F3164DB021AC3BF100D06251 /* AppDelegate.swift */,
+				F3164DBA21AC3BF300D06251 /* Assets.xcassets */,
+				F3400AA921B5C5CC00903545 /* Colors.xcassets */,
+				F3164DBC21AC3BF300D06251 /* LaunchScreen.storyboard */,
+				F3164DBF21AC3BF300D06251 /* Info.plist */,
+				F3164DB721AC3BF100D06251 /* LucrezCeva.xcdatamodeld */,
+			);
+			path = LucrezCeva;
+			sourceTree = "<group>";
+		};
+		F3164DC521AC3C1600D06251 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD5C5C21D3E7D9005A2213 /* settings */,
+				F3CD5C5B21D3E7CE005A2213 /* addJob */,
+				F3CD5C5A21D3E7C7005A2213 /* home */,
+				F3164DD321AC3D2B00D06251 /* customViews */,
+				F3164DE121AC511500D06251 /* initial */,
+				F3164DCB21AC3C6000D06251 /* createAccount */,
+				F3164DC621AC3C2900D06251 /* login */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F3164DC621AC3C2900D06251 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				F3164DC721AC3C4100D06251 /* LoginViewController.swift */,
+				F3164DC921AC3C5400D06251 /* LoginViewController.storyboard */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		F3164DCB21AC3C6000D06251 /* createAccount */ = {
+			isa = PBXGroup;
+			children = (
+				F3400AAB21B5C66D00903545 /* completeAccount */,
+				F3164DCE21AC3C9300D06251 /* CreateAccountViewController.swift */,
+				F3164DCC21AC3C8500D06251 /* CreateAccountViewController.storyboard */,
+			);
+			path = createAccount;
+			sourceTree = "<group>";
+		};
+		F3164DD021AC3D0100D06251 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				F3400AB221B5C77C00903545 /* extensions */,
+				F3164DD121AC3D1500D06251 /* Storyboards.swift */,
+				F3164DD621AC420B00D06251 /* Colors.swift */,
+				F3164DD821AC421400D06251 /* Strings.swift */,
+				F3164DE221AC519700D06251 /* Logger.swift */,
+				F3400AB521B5DA8800903545 /* PrimaryButton.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		F3164DD321AC3D2B00D06251 /* customViews */ = {
+			isa = PBXGroup;
+			children = (
+				F3164DD421AC3D3D00D06251 /* BaseViewController.swift */,
+				F3400AB921B5E01E00903545 /* BasePhotoPickerViewController.swift */,
+				F3CD5C6F21D539D6005A2213 /* BaseTabBarController.swift */,
+			);
+			path = customViews;
+			sourceTree = "<group>";
+		};
+		F3164DE121AC511500D06251 /* initial */ = {
+			isa = PBXGroup;
+			children = (
+				F3164DDE21AC4F1500D06251 /* Main.storyboard */,
+				F3164DDD21AC4F1500D06251 /* ViewController.swift */,
+			);
+			path = initial;
+			sourceTree = "<group>";
+		};
+		F3400AAB21B5C66D00903545 /* completeAccount */ = {
+			isa = PBXGroup;
+			children = (
+				F3400AAC21B5C68500903545 /* CompleteAccountViewController.swift */,
+				F3400AAE21B5C69400903545 /* CompleteAccountViewController.storyboard */,
+			);
+			path = completeAccount;
+			sourceTree = "<group>";
+		};
+		F3400AB221B5C77C00903545 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3400AB021B5C77600903545 /* GradientExtension.swift */,
+				F3400AB321B5D1C000903545 /* TextFieldExtension.swift */,
+				F3400AB721B5DE1900903545 /* HideKeyboardExtension.swift */,
+				F3B75E2321C436AE00482CD0 /* ViewControllerExtension.swift */,
+				F3CD5C5821D3C88A005A2213 /* UIWindow.swift */,
+				F3CD5C7121D5492E005A2213 /* UISearchBarExtension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		F3B75E1721C4337300482CD0 /* flowControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3B75E1D21C4343800482CD0 /* MainCoordinator.swift */,
+				F3B75E2821C439DB00482CD0 /* LoginFlowController.swift */,
+				F3B75E1F21C4353C00482CD0 /* CreateAccountCoordinator.swift */,
+				F3B75E3021C44DBC00482CD0 /* LoginCoordinator.swift */,
+				F3B75E1821C4338300482CD0 /* base */,
+			);
+			path = flowControllers;
+			sourceTree = "<group>";
+		};
+		F3B75E1821C4338300482CD0 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				F3B75E1921C433A000482CD0 /* Coordinator.swift */,
+				F3B75E1B21C4340600482CD0 /* AppCoordinator.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		F3B75E2521C437B300482CD0 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F3B75E2621C4382600482CD0 /* CreateAccountViewModel.swift */,
+				F3B75E2A21C43B9800482CD0 /* LoginViewModel.swift */,
+				F3B75E2E21C441AB00482CD0 /* CompleteAccountViewModel.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		F3CD5C5A21D3E7C7005A2213 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD5C5D21D3E7F0005A2213 /* HomeFlowController.swift */,
+				F3CD5C5F21D3E7FB005A2213 /* HomeViewController.swift */,
+				F3CD5C6121D3E804005A2213 /* HomeViewController.storyboard */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		F3CD5C5B21D3E7CE005A2213 /* addJob */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD5C6321D3E813005A2213 /* AddJobFlowController.swift */,
+				F3CD5C6521D3E81F005A2213 /* AddJobViewController.swift */,
+				F3CD5C6721D3E82C005A2213 /* AddJobViewController.storyboard */,
+			);
+			path = addJob;
+			sourceTree = "<group>";
+		};
+		F3CD5C5C21D3E7D9005A2213 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD5C6921D3E842005A2213 /* SettingsFlowController.swift */,
+				F3CD5C6B21D3E84B005A2213 /* SettingsViewController.swift */,
+				F3CD5C6D21D3E853005A2213 /* SettingsViewController.storyboard */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3164DAC21AC3BF100D06251 /* LucrezCeva */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3164DC221AC3BF300D06251 /* Build configuration list for PBXNativeTarget "LucrezCeva" */;
+			buildPhases = (
+				9034C7B2D3F6E3B132EF8000 /* [CP] Check Pods Manifest.lock */,
+				F3164DA921AC3BF100D06251 /* Sources */,
+				F3164DAA21AC3BF100D06251 /* Frameworks */,
+				F3164DAB21AC3BF100D06251 /* Resources */,
+				4D4271C6EB15B1BC471A4133 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LucrezCeva;
+			productName = LucrezCeva;
+			productReference = F3164DAD21AC3BF100D06251 /* LucrezCeva.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3164DA521AC3BF100D06251 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = LucrezCeva;
+				TargetAttributes = {
+					F3164DAC21AC3BF100D06251 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F3164DA821AC3BF100D06251 /* Build configuration list for PBXProject "LucrezCeva" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3164DA421AC3BF100D06251;
+			productRefGroup = F3164DAE21AC3BF100D06251 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3164DAC21AC3BF100D06251 /* LucrezCeva */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3164DAB21AC3BF100D06251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3164DBE21AC3BF300D06251 /* LaunchScreen.storyboard in Resources */,
+				F3164DE021AC4F1500D06251 /* Main.storyboard in Resources */,
+				F3CD5C6E21D3E853005A2213 /* SettingsViewController.storyboard in Resources */,
+				F3164DBB21AC3BF300D06251 /* Assets.xcassets in Resources */,
+				F3CD5C6821D3E82C005A2213 /* AddJobViewController.storyboard in Resources */,
+				F3400AAA21B5C5CC00903545 /* Colors.xcassets in Resources */,
+				F3CD5C6221D3E804005A2213 /* HomeViewController.storyboard in Resources */,
+				F3164DCA21AC3C5400D06251 /* LoginViewController.storyboard in Resources */,
+				F3400AAF21B5C69400903545 /* CompleteAccountViewController.storyboard in Resources */,
+				F3164DCD21AC3C8500D06251 /* CreateAccountViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D4271C6EB15B1BC471A4133 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LucrezCeva/Pods-LucrezCeva-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BRYXBanner/BRYXBanner.framework",
+				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BRYXBanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LucrezCeva/Pods-LucrezCeva-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9034C7B2D3F6E3B132EF8000 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LucrezCeva-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3164DA921AC3BF100D06251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3164DD221AC3D1500D06251 /* Storyboards.swift in Sources */,
+				F3400AB121B5C77600903545 /* GradientExtension.swift in Sources */,
+				F3CD5C7021D539D6005A2213 /* BaseTabBarController.swift in Sources */,
+				F3CD5C6021D3E7FB005A2213 /* HomeViewController.swift in Sources */,
+				F3CD5C7221D5492E005A2213 /* UISearchBarExtension.swift in Sources */,
+				F3B75E3121C44DBC00482CD0 /* LoginCoordinator.swift in Sources */,
+				F3400AB821B5DE1900903545 /* HideKeyboardExtension.swift in Sources */,
+				F3400ABA21B5E01E00903545 /* BasePhotoPickerViewController.swift in Sources */,
+				F3164DD921AC421400D06251 /* Strings.swift in Sources */,
+				F3164DD721AC420B00D06251 /* Colors.swift in Sources */,
+				F3B75E1C21C4340600482CD0 /* AppCoordinator.swift in Sources */,
+				F3CD5C6621D3E81F005A2213 /* AddJobViewController.swift in Sources */,
+				F3400AB621B5DA8800903545 /* PrimaryButton.swift in Sources */,
+				F3400AAD21B5C68500903545 /* CompleteAccountViewController.swift in Sources */,
+				F3164DDF21AC4F1500D06251 /* ViewController.swift in Sources */,
+				F3164DCF21AC3C9300D06251 /* CreateAccountViewController.swift in Sources */,
+				F3CD5C5921D3C88A005A2213 /* UIWindow.swift in Sources */,
+				F3CD5C5E21D3E7F0005A2213 /* HomeFlowController.swift in Sources */,
+				F3B75E1A21C433A000482CD0 /* Coordinator.swift in Sources */,
+				F3164DE321AC519700D06251 /* Logger.swift in Sources */,
+				F3B75E2B21C43B9800482CD0 /* LoginViewModel.swift in Sources */,
+				F3B75E2F21C441AB00482CD0 /* CompleteAccountViewModel.swift in Sources */,
+				F3164DC821AC3C4100D06251 /* LoginViewController.swift in Sources */,
+				F3CD5C6421D3E813005A2213 /* AddJobFlowController.swift in Sources */,
+				F3CD5C6C21D3E84B005A2213 /* SettingsViewController.swift in Sources */,
+				F3B75E1E21C4343800482CD0 /* MainCoordinator.swift in Sources */,
+				F3B75E2021C4353C00482CD0 /* CreateAccountCoordinator.swift in Sources */,
+				F3B75E2921C439DB00482CD0 /* LoginFlowController.swift in Sources */,
+				F3400AB421B5D1C000903545 /* TextFieldExtension.swift in Sources */,
+				F3B75E2421C436AE00482CD0 /* ViewControllerExtension.swift in Sources */,
+				F3164DB121AC3BF100D06251 /* AppDelegate.swift in Sources */,
+				F3B75E2721C4382600482CD0 /* CreateAccountViewModel.swift in Sources */,
+				F3164DD521AC3D3D00D06251 /* BaseViewController.swift in Sources */,
+				F3CD5C6A21D3E842005A2213 /* SettingsFlowController.swift in Sources */,
+				F3164DB921AC3BF100D06251 /* LucrezCeva.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3164DBC21AC3BF300D06251 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3164DBD21AC3BF300D06251 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3164DC021AC3BF300D06251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F3164DC121AC3BF300D06251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3164DC321AC3BF300D06251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02D75A6C26F5E370BF4920E5 /* Pods-LucrezCeva.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4P93B9WNY;
+				INFOPLIST_FILE = LucrezCeva/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ro.lucrezceva.LucrezCeva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F3164DC421AC3BF300D06251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DAC636BE3A45FC45FEFC003 /* Pods-LucrezCeva.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4P93B9WNY;
+				INFOPLIST_FILE = LucrezCeva/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ro.lucrezceva.LucrezCeva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3164DA821AC3BF100D06251 /* Build configuration list for PBXProject "LucrezCeva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3164DC021AC3BF300D06251 /* Debug */,
+				F3164DC121AC3BF300D06251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3164DC221AC3BF300D06251 /* Build configuration list for PBXNativeTarget "LucrezCeva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3164DC321AC3BF300D06251 /* Debug */,
+				F3164DC421AC3BF300D06251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F3164DB721AC3BF100D06251 /* LucrezCeva.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F3164DB821AC3BF100D06251 /* LucrezCeva.xcdatamodel */,
+			);
+			currentVersion = F3164DB821AC3BF100D06251 /* LucrezCeva.xcdatamodel */;
+			path = LucrezCeva.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F3164DA521AC3BF100D06251 /* Project object */;
+}
