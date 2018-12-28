@@ -34,7 +34,6 @@
 		F3B75E1A21C433A000482CD0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E1921C433A000482CD0 /* Coordinator.swift */; };
 		F3B75E1C21C4340600482CD0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E1B21C4340600482CD0 /* AppCoordinator.swift */; };
 		F3B75E1E21C4343800482CD0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E1D21C4343800482CD0 /* MainCoordinator.swift */; };
-		F3B75E2021C4353C00482CD0 /* CreateAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E1F21C4353C00482CD0 /* CreateAccountCoordinator.swift */; };
 		F3B75E2421C436AE00482CD0 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E2321C436AE00482CD0 /* ViewControllerExtension.swift */; };
 		F3B75E2721C4382600482CD0 /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E2621C4382600482CD0 /* CreateAccountViewModel.swift */; };
 		F3B75E2921C439DB00482CD0 /* LoginFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E2821C439DB00482CD0 /* LoginFlowController.swift */; };
@@ -87,7 +86,6 @@
 		F3B75E1921C433A000482CD0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F3B75E1B21C4340600482CD0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F3B75E1D21C4343800482CD0 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		F3B75E1F21C4353C00482CD0 /* CreateAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountCoordinator.swift; sourceTree = "<group>"; };
 		F3B75E2321C436AE00482CD0 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		F3B75E2621C4382600482CD0 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
 		F3B75E2821C439DB00482CD0 /* LoginFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowController.swift; sourceTree = "<group>"; };
@@ -264,7 +262,6 @@
 			children = (
 				F3B75E1D21C4343800482CD0 /* MainCoordinator.swift */,
 				F3B75E2821C439DB00482CD0 /* LoginFlowController.swift */,
-				F3B75E1F21C4353C00482CD0 /* CreateAccountCoordinator.swift */,
 				F3B75E3021C44DBC00482CD0 /* LoginCoordinator.swift */,
 				F3B75E1821C4338300482CD0 /* base */,
 			);
@@ -471,7 +468,6 @@
 				F3CD5C6421D3E813005A2213 /* AddJobFlowController.swift in Sources */,
 				F3CD5C6C21D3E84B005A2213 /* SettingsViewController.swift in Sources */,
 				F3B75E1E21C4343800482CD0 /* MainCoordinator.swift in Sources */,
-				F3B75E2021C4353C00482CD0 /* CreateAccountCoordinator.swift in Sources */,
 				F3B75E2921C439DB00482CD0 /* LoginFlowController.swift in Sources */,
 				F3400AB421B5D1C000903545 /* TextFieldExtension.swift in Sources */,
 				F3B75E2421C436AE00482CD0 /* ViewControllerExtension.swift in Sources */,
