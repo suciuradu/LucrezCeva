@@ -131,10 +131,15 @@
                                     <action selector="loginTapped:" destination="dcX-LR-w2W" eventType="touchUpInside" id="xEe-e1-IDV"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="nOJ-lQ-0aR">
+                                <rect key="frame" x="169" y="217" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.91764705879999997" green="0.16862745100000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="EpV-D5-yJc" firstAttribute="top" secondItem="sDU-jf-xyY" secondAttribute="bottom" constant="60" id="32r-sj-jmd"/>
+                            <constraint firstItem="nOJ-lQ-0aR" firstAttribute="top" secondItem="sDU-jf-xyY" secondAttribute="bottom" constant="10" id="9Wk-NF-fEz"/>
+                            <constraint firstItem="nOJ-lQ-0aR" firstAttribute="centerX" secondItem="ko9-1l-4Pg" secondAttribute="centerX" id="9a5-vf-sjE"/>
                             <constraint firstAttribute="bottom" secondItem="VcB-SX-hd7" secondAttribute="bottom" id="F8I-Js-ftZ"/>
                             <constraint firstItem="EpV-D5-yJc" firstAttribute="leading" secondItem="Qbd-QP-Ogo" secondAttribute="leading" constant="32" id="HCU-8Q-tGu"/>
                             <constraint firstItem="sDU-jf-xyY" firstAttribute="leading" secondItem="BwQ-bD-mBW" secondAttribute="leading" constant="30" id="M2K-RS-aye"/>
@@ -156,6 +161,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="dam-MB-Ibo" id="tTd-RY-liA"/>
+                        <outlet property="loadingIndicator" destination="nOJ-lQ-0aR" id="Hpm-vd-2fb"/>
                         <outlet property="parolaTextField" destination="jY3-Bb-nUn" id="wqf-Yo-yEk"/>
                     </connections>
                 </viewController>

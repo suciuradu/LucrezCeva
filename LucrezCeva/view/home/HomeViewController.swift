@@ -26,8 +26,10 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var noutatiButton: UIButton!
     @IBOutlet weak var recomandateButton: UIButton!
     @IBOutlet weak var salvateButton: UIButton!
+    @IBOutlet weak var leadingSelectedTabConstraint: NSLayoutConstraint!
     
-    
+    var count = 10
+    var selectedTabIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,9 +47,40 @@ class HomeViewController: BaseViewController {
         searchBar.setImage(#imageLiteral(resourceName: "search-white"), for: .search, state: .normal)
         topView.applyGradient(withColours: [Colors.colorTopBlue,Colors.colorMediumTurqoise], gradientOrientation: .vertical)
         tagList.addTags(["Cluj-Napoca","Ocazional"])
-        self.selectedTabView.center.x = self.salvateButton.center.x
-        selectedTabView.translatesAutoresizingMaskIntoConstraints = false
-        self.selectedTabView.centerXAnchor.constraint(equalTo: noutatiButton.centerXAnchor).isActive = true
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.handleGesture(gesture:)))
+        swipeLeft.direction = .left
+        self.jobsTableView.addGestureRecognizer(swipeLeft)
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.handleGesture(gesture:)))
+        swipeRight.direction = .right
+        self.jobsTableView.addGestureRecognizer(swipeRight)
+        noutatiButton.isSelected = true
+       
+    }
+    
+    @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
+        if gesture.direction == UISwipeGestureRecognizerDirection.right {
+            count = 1
+            jobsTableView.reloadData()
+            switch selectedTabIndex {
+            case 1:
+                animateTabColorChange(sender: noutatiButton)
+            case 2:
+                animateTabColorChange(sender: recomandateButton)
+            default:
+                break
+            }
+        } else if gesture.direction == UISwipeGestureRecognizerDirection.left {
+            count = 2
+            jobsTableView.reloadData()
+            switch selectedTabIndex {
+            case 0:
+                animateTabColorChange(sender: recomandateButton)
+            case 1:
+                animateTabColorChange(sender: salvateButton)
+            default:
+                break
+            }
+        }
     }
     
     private func animateTabColorChange(sender: UIButton) {
@@ -56,17 +89,31 @@ class HomeViewController: BaseViewController {
         salvateButton.isSelected = false
         UIView.animate(withDuration: 0.3) {
             sender.isSelected = true
-            self.selectedTabView.centerXAnchor.constraint(equalTo: sender.centerXAnchor).isActive = true
+            self.selectedTabIndex = sender.tag
+            Logger.log("tag",sender.tag)
+            self.leadingSelectedTabConstraint.constant = sender.frame.minX
+            self.view.layoutIfNeeded()
         }
     }
     
+    @IBAction func noutatiTapped(_ sender: UIButton) {
+        animateTabColorChange(sender: sender)
+    }
     
+    @IBAction func recomandateTapped(_ sender: UIButton) {
+        animateTabColorChange(sender: sender)
+    }
     
+    @IBAction func salvateTapped(_ sender: UIButton) {
+        animateTabColorChange(sender: sender)
+        Logger.log("tag salv",sender.tag)
+
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

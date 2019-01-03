@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1B3B9AD30633627041A2D3BC /* Pods_LucrezCeva.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4162CF95F85D3B12F40AC7B6 /* Pods_LucrezCeva.framework */; };
+		F307724321D97DCE005D09C7 /* ApiContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307724221D97DCE005D09C7 /* ApiContract.swift */; };
+		F307724521D97F26005D09C7 /* ApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307724421D97F26005D09C7 /* ApiEndpoints.swift */; };
+		F307724721D98024005D09C7 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307724621D98024005D09C7 /* ApiClient.swift */; };
+		F307724A21D980B8005D09C7 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307724921D980B8005D09C7 /* LoginResponse.swift */; };
+		F307724C21D99037005D09C7 /* PersistancyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307724B21D99037005D09C7 /* PersistancyManager.swift */; };
 		F3164DB121AC3BF100D06251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3164DB021AC3BF100D06251 /* AppDelegate.swift */; };
 		F3164DB921AC3BF100D06251 /* LucrezCeva.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3164DB721AC3BF100D06251 /* LucrezCeva.xcdatamodeld */; };
 		F3164DBB21AC3BF300D06251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3164DBA21AC3BF300D06251 /* Assets.xcassets */; };
@@ -31,6 +36,8 @@
 		F3400AB621B5DA8800903545 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3400AB521B5DA8800903545 /* PrimaryButton.swift */; };
 		F3400AB821B5DE1900903545 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3400AB721B5DE1900903545 /* HideKeyboardExtension.swift */; };
 		F3400ABA21B5E01E00903545 /* BasePhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3400AB921B5E01E00903545 /* BasePhotoPickerViewController.swift */; };
+		F35744C421DD344C00D50E7C /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35744C321DD344C00D50E7C /* DynamicValue.swift */; };
+		F35744C621DD4E5F00D50E7C /* UtilExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35744C521DD4E5F00D50E7C /* UtilExtentions.swift */; };
 		F3B75E1A21C433A000482CD0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E1921C433A000482CD0 /* Coordinator.swift */; };
 		F3B75E1C21C4340600482CD0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E1B21C4340600482CD0 /* AppCoordinator.swift */; };
 		F3B75E1E21C4343800482CD0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E1D21C4343800482CD0 /* MainCoordinator.swift */; };
@@ -39,7 +46,6 @@
 		F3B75E2921C439DB00482CD0 /* LoginFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E2821C439DB00482CD0 /* LoginFlowController.swift */; };
 		F3B75E2B21C43B9800482CD0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E2A21C43B9800482CD0 /* LoginViewModel.swift */; };
 		F3B75E2F21C441AB00482CD0 /* CompleteAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E2E21C441AB00482CD0 /* CompleteAccountViewModel.swift */; };
-		F3B75E3121C44DBC00482CD0 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B75E3021C44DBC00482CD0 /* LoginCoordinator.swift */; };
 		F3CD5C5921D3C88A005A2213 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5C5821D3C88A005A2213 /* UIWindow.swift */; };
 		F3CD5C5E21D3E7F0005A2213 /* HomeFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5C5D21D3E7F0005A2213 /* HomeFlowController.swift */; };
 		F3CD5C6021D3E7FB005A2213 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD5C5F21D3E7FB005A2213 /* HomeViewController.swift */; };
@@ -58,6 +64,11 @@
 		02D75A6C26F5E370BF4920E5 /* Pods-LucrezCeva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LucrezCeva.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LucrezCeva/Pods-LucrezCeva.debug.xcconfig"; sourceTree = "<group>"; };
 		4162CF95F85D3B12F40AC7B6 /* Pods_LucrezCeva.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LucrezCeva.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DAC636BE3A45FC45FEFC003 /* Pods-LucrezCeva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LucrezCeva.release.xcconfig"; path = "Pods/Target Support Files/Pods-LucrezCeva/Pods-LucrezCeva.release.xcconfig"; sourceTree = "<group>"; };
+		F307724221D97DCE005D09C7 /* ApiContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiContract.swift; sourceTree = "<group>"; };
+		F307724421D97F26005D09C7 /* ApiEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoints.swift; sourceTree = "<group>"; };
+		F307724621D98024005D09C7 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		F307724921D980B8005D09C7 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		F307724B21D99037005D09C7 /* PersistancyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistancyManager.swift; sourceTree = "<group>"; };
 		F3164DAD21AC3BF100D06251 /* LucrezCeva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LucrezCeva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3164DB021AC3BF100D06251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3164DB821AC3BF100D06251 /* LucrezCeva.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LucrezCeva.xcdatamodel; sourceTree = "<group>"; };
@@ -83,6 +94,8 @@
 		F3400AB521B5DA8800903545 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		F3400AB721B5DE1900903545 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 		F3400AB921B5E01E00903545 /* BasePhotoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePhotoPickerViewController.swift; sourceTree = "<group>"; };
+		F35744C321DD344C00D50E7C /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		F35744C521DD4E5F00D50E7C /* UtilExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilExtentions.swift; sourceTree = "<group>"; };
 		F3B75E1921C433A000482CD0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F3B75E1B21C4340600482CD0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F3B75E1D21C4343800482CD0 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -91,7 +104,6 @@
 		F3B75E2821C439DB00482CD0 /* LoginFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowController.swift; sourceTree = "<group>"; };
 		F3B75E2A21C43B9800482CD0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F3B75E2E21C441AB00482CD0 /* CompleteAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteAccountViewModel.swift; sourceTree = "<group>"; };
-		F3B75E3021C44DBC00482CD0 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		F3CD5C5821D3C88A005A2213 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		F3CD5C5D21D3E7F0005A2213 /* HomeFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowController.swift; sourceTree = "<group>"; };
 		F3CD5C5F21D3E7FB005A2213 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +147,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F307724121D97D9A005D09C7 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				F307724221D97DCE005D09C7 /* ApiContract.swift */,
+				F307724421D97F26005D09C7 /* ApiEndpoints.swift */,
+				F307724621D98024005D09C7 /* ApiClient.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		F307724821D980A2005D09C7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F307724921D980B8005D09C7 /* LoginResponse.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		F3164DA421AC3BF100D06251 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +186,8 @@
 		F3164DAF21AC3BF100D06251 /* LucrezCeva */ = {
 			isa = PBXGroup;
 			children = (
+				F307724821D980A2005D09C7 /* model */,
+				F307724121D97D9A005D09C7 /* network */,
 				F3B75E2521C437B300482CD0 /* viewModels */,
 				F3B75E1721C4337300482CD0 /* flowControllers */,
 				F3164DD021AC3D0100D06251 /* utils */,
@@ -212,6 +244,8 @@
 				F3164DD821AC421400D06251 /* Strings.swift */,
 				F3164DE221AC519700D06251 /* Logger.swift */,
 				F3400AB521B5DA8800903545 /* PrimaryButton.swift */,
+				F307724B21D99037005D09C7 /* PersistancyManager.swift */,
+				F35744C321DD344C00D50E7C /* DynamicValue.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -253,6 +287,7 @@
 				F3B75E2321C436AE00482CD0 /* ViewControllerExtension.swift */,
 				F3CD5C5821D3C88A005A2213 /* UIWindow.swift */,
 				F3CD5C7121D5492E005A2213 /* UISearchBarExtension.swift */,
+				F35744C521DD4E5F00D50E7C /* UtilExtentions.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -262,7 +297,6 @@
 			children = (
 				F3B75E1D21C4343800482CD0 /* MainCoordinator.swift */,
 				F3B75E2821C439DB00482CD0 /* LoginFlowController.swift */,
-				F3B75E3021C44DBC00482CD0 /* LoginCoordinator.swift */,
 				F3B75E1821C4338300482CD0 /* base */,
 			);
 			path = flowControllers;
@@ -402,6 +436,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-LucrezCeva/Pods-LucrezCeva-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BRYXBanner/BRYXBanner.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
 			);
@@ -409,6 +444,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BRYXBanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
 			);
@@ -443,16 +479,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3164DD221AC3D1500D06251 /* Storyboards.swift in Sources */,
+				F307724A21D980B8005D09C7 /* LoginResponse.swift in Sources */,
 				F3400AB121B5C77600903545 /* GradientExtension.swift in Sources */,
+				F307724521D97F26005D09C7 /* ApiEndpoints.swift in Sources */,
+				F35744C421DD344C00D50E7C /* DynamicValue.swift in Sources */,
 				F3CD5C7021D539D6005A2213 /* BaseTabBarController.swift in Sources */,
 				F3CD5C6021D3E7FB005A2213 /* HomeViewController.swift in Sources */,
 				F3CD5C7221D5492E005A2213 /* UISearchBarExtension.swift in Sources */,
-				F3B75E3121C44DBC00482CD0 /* LoginCoordinator.swift in Sources */,
 				F3400AB821B5DE1900903545 /* HideKeyboardExtension.swift in Sources */,
 				F3400ABA21B5E01E00903545 /* BasePhotoPickerViewController.swift in Sources */,
 				F3164DD921AC421400D06251 /* Strings.swift in Sources */,
 				F3164DD721AC420B00D06251 /* Colors.swift in Sources */,
 				F3B75E1C21C4340600482CD0 /* AppCoordinator.swift in Sources */,
+				F307724721D98024005D09C7 /* ApiClient.swift in Sources */,
+				F35744C621DD4E5F00D50E7C /* UtilExtentions.swift in Sources */,
 				F3CD5C6621D3E81F005A2213 /* AddJobViewController.swift in Sources */,
 				F3400AB621B5DA8800903545 /* PrimaryButton.swift in Sources */,
 				F3400AAD21B5C68500903545 /* CompleteAccountViewController.swift in Sources */,
@@ -464,10 +504,12 @@
 				F3164DE321AC519700D06251 /* Logger.swift in Sources */,
 				F3B75E2B21C43B9800482CD0 /* LoginViewModel.swift in Sources */,
 				F3B75E2F21C441AB00482CD0 /* CompleteAccountViewModel.swift in Sources */,
+				F307724321D97DCE005D09C7 /* ApiContract.swift in Sources */,
 				F3164DC821AC3C4100D06251 /* LoginViewController.swift in Sources */,
 				F3CD5C6421D3E813005A2213 /* AddJobFlowController.swift in Sources */,
 				F3CD5C6C21D3E84B005A2213 /* SettingsViewController.swift in Sources */,
 				F3B75E1E21C4343800482CD0 /* MainCoordinator.swift in Sources */,
+				F307724C21D99037005D09C7 /* PersistancyManager.swift in Sources */,
 				F3B75E2921C439DB00482CD0 /* LoginFlowController.swift in Sources */,
 				F3400AB421B5D1C000903545 /* TextFieldExtension.swift in Sources */,
 				F3B75E2421C436AE00482CD0 /* ViewControllerExtension.swift in Sources */,

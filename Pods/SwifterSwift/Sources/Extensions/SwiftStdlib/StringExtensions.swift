@@ -153,6 +153,22 @@ public extension String {
         return comps.joined(separator: "").count == 0 && hasLetters && hasNumbers
     }
     #endif
+    
+    #if canImport(Foundation)
+    /// SwifterSwift: Check if is valid password with letters, numbers and uppercase.
+    ///
+    ///        // useful for passwords
+    ///        "123Abc".isValidPassword -> true
+    ///        "abc".isValidPassword -> false
+    ///
+    public var isValidPassword: Bool {
+        let hasLetters = rangeOfCharacter(from: .letters, options: .numeric, range: nil) != nil
+        let hasNumbers = rangeOfCharacter(from: .decimalDigits, options: .literal, range: nil) != nil
+        let hasUpperCase = range(of: "[A-Z]", options: .regularExpression) != nil
+        let comps = components(separatedBy: .alphanumerics)
+        return comps.joined(separator: "").count == 0 && hasLetters && hasNumbers && hasUpperCase
+    }
+    #endif
 
     #if canImport(Foundation)
     /// SwifterSwift: Check if string is valid email format.

@@ -10,7 +10,19 @@ import Foundation
 
 class LoginViewModel {
     
+    let loginSuccess = DynamicValue<Bool>(false)
+    
     weak var flowDelegate: LoginFlowDelegate?
+    
+    func login(username: String, password: String){
+        ApiClient.shared.login(username: username, password: password) { (response, success) in
+            if success {
+                self.loginSuccess.value = true
+            } else {
+                self.loginSuccess.value = false
+            }
+        }
+    }
     
     func noAccountTapped() {
         flowDelegate?.noAccountTapped()

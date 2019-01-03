@@ -12,11 +12,11 @@ import UIKit
 class Colors {
     
     static var colorGreen: UIColor = {
-        return UIColor.init(named: "greenColor") ?? UIColor.green
+        return UIColor.init(named: "colorGreen") ?? UIColor.green
     }()
     
     static var colorRed: UIColor = {
-        return UIColor.init(named: "redColor") ?? UIColor.red
+        return UIColor.init(named: "colorRed") ?? UIColor.red
     }()
     
     static var colorPrimary: UIColor = {

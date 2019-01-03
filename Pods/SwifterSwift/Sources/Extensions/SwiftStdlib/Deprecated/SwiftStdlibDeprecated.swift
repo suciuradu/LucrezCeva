@@ -34,7 +34,6 @@ extension String {
         return range(of: regex, options: .regularExpression, range: nil, locale: nil) != nil
     }
     #endif
-
 }
 
 public extension Array {

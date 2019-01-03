@@ -4,6 +4,7 @@ PODS:
   - Crashlytics (3.10.9):
     - Fabric (~> 1.7.13)
   - Fabric (1.7.13)
+  - IQKeyboardManagerSwift (6.2.0)
   - SwifterSwift (4.6.0):
     - SwifterSwift/AppKit (= 4.6.0)
     - SwifterSwift/CoreGraphics (= 4.6.0)
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.7.3)
   - BRYXBanner
   - Crashlytics (~> 3.10.9)
+  - IQKeyboardManagerSwift
   - SwifterSwift
   - TagListView (~> 1.0)
 
@@ -36,6 +38,7 @@ SPEC REPOS:
     - BRYXBanner
     - Crashlytics
     - Fabric
+    - IQKeyboardManagerSwift
     - SwifterSwift
     - TagListView
 
@@ -44,9 +47,10 @@ SPEC CHECKSUMS:
   BRYXBanner: 8cf1b119792e1cee8d7ba107297ef89f7409bc53
   Crashlytics: 55e24fc23989680285a21cb1146578d9d18e432c
   Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
   SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
   TagListView: 0c7e9c26b9aff858224ee6b155f5fcacd9e27c83
 
-PODFILE CHECKSUM: 40adfa157fad1cf55195f4a05346a77d45f0499b
+PODFILE CHECKSUM: b80c8d22bb26e663b56d7aae598348347581b625
 
 COCOAPODS: 1.5.3

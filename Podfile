@@ -12,6 +12,8 @@ target 'LucrezCeva' do
   pod 'Crashlytics', '~> 3.10.9'
   pod 'Alamofire', '~> 4.7.3'
   pod 'TagListView', '~> 1.0'
+  pod 'IQKeyboardManagerSwift'
+
 
 
 

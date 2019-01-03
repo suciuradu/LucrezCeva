@@ -30,12 +30,13 @@ class LoginFlowController: Coordinator {
 }
 
 extension LoginFlowController: LoginFlowDelegate {
-    
-    func completeAccountTapped() {
+    func completeAccountTapped(name: String, email: String, password: String, image: UIImage) {
         let viewController = CompleteAccountViewController.instantiate()
         let viewModel = CompleteAccountViewModel()
         viewModel.flowDelegate = self
         viewController.viewModel = viewModel
+        viewController.fullName = name
+        viewController.profilePictureImage = image
         navigate(to: viewController, with: .push)
     }
     

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5AB7D576D73B25A30EA881F319F9B5CB"
+               BlueprintIdentifier = "4FF31D1EC420FD8191B3ACC3F894C79C"
                BlueprintName = "TagListView"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "TagListView.framework">

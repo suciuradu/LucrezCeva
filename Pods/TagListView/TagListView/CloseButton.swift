@@ -29,18 +29,6 @@ internal class CloseButton: UIButton {
             height: iconSize
         )
         
-        print("rect height: ",rect.height)
-               print("rect width: ",rect.width)
-               print("iconFrame width: ",iconFrame.width)
-               print("iconFrame height: ",iconFrame.height)
-               print("iconFrame maxX/2: ",iconFrame.maxX/2)
-               print("iconFrame maxY/2: ",iconFrame.maxY/2)
-               print("iconFrame minX:/2 ",iconFrame.minX/2)
-               print("iconFrame minY/2: ",iconFrame.minY/2)
-                print("iconFrame midX: ",iconFrame.midX)
-                print("iconFrame midY: ",iconFrame.midY)
-               print("iconFrame origin: ",iconFrame.origin)
-        
         path.move(to: iconFrame.origin)
         path.move(to: CGPoint(x: iconFrame.minX+3, y: iconFrame.maxY+1))
         path.addLine(to: CGPoint(x: iconFrame.minX, y: iconFrame.midY))
