@@ -30,7 +30,7 @@ class AppCoordinator {
     }
     
     public func start() {
-       showLogin()
+       showMain()
     }
     
     public func showLogin() {

@@ -27,6 +27,8 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var recomandateButton: UIButton!
     @IBOutlet weak var salvateButton: UIButton!
     @IBOutlet weak var leadingSelectedTabConstraint: NSLayoutConstraint!
+    @IBOutlet weak var showFilters: UIImageView!
+
     
     var count = 10
     var selectedTabIndex = 0
@@ -54,6 +56,7 @@ class HomeViewController: BaseViewController {
         swipeRight.direction = .right
         self.jobsTableView.addGestureRecognizer(swipeRight)
         noutatiButton.isSelected = true
+        showFilters.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showPopUp)))
        
     }
     
@@ -109,6 +112,14 @@ class HomeViewController: BaseViewController {
         Logger.log("tag salv",sender.tag)
 
     }
+    
+    @objc private func showPopUp() {
+        let storyboard = UIStoryboard(name: "HomeViewController", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "popup") as! PopUpViewController
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -124,4 +135,49 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
 class JobsCell: UITableViewCell {
     
+}
+
+class PopUpViewController: UIViewController {
+    
+    @IBOutlet weak var tapDismissView: UIView!
+    var filterArray = [String]()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+    }
+    
+    private func setupUI() {
+        tapDismissView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(PopUpViewController.dismissViewController)))
+    }
+    
+    @objc private func dismissViewController() {
+        if let vc = presentingViewController as? HomeViewController {
+           //send the array of filters back
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func zilnicFilter(_ sender: UIButton) {
+        setButtonState(sender: sender)
+    }
+    
+    @IBAction func saptamanalFilter(_ sender: UIButton) {
+        setButtonState(sender: sender)
+    }
+    @IBAction func lunarFilter(_ sender: UIButton) {
+        setButtonState(sender: sender)
+
+    }
+    @IBAction func ocazionalFilter(_ sender: UIButton) {
+        setButtonState(sender: sender)
+    }
+    
+    private func setButtonState(sender: UIButton) {
+        if sender.isSelected {
+            sender.isSelected = false
+        } else {
+            sender.isSelected = true
+        }
+    }
 }
