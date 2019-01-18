@@ -137,4 +137,152 @@ class ApiClient {
         
     }
     
+    func getJobs(_ locations: [String], _ types: [String], _ word: String, completion: @escaping(_ data: [[String:Any]])->()) {
+        let body = [
+            "locations" : locations,
+            "types" : types,
+            "word" : word,
+            "jobAcceptanceType": "All"
+            ] as [String : Any]
+        let url = ApiEndpoints.GET_JOBS.getUrl(pathParams: nil)
+        var header: HTTPHeaders?
+        if PersistancyManager.getToken() == nil || PersistancyManager.getToken() == "" {
+            header = [:]
+        } else {
+            header = ConstantApi.AUTHENTICATED_HEADER
+        }
+        Alamofire.request(url,
+                          method: .post,
+                          parameters: body,
+                          encoding: JSONEncoding.default,
+                          headers: header).validate().responseJSON { (response) in
+                            Logger.log(response)
+                            if response.error != nil {
+                                completion([])
+                            } else {
+                                completion(response.value as! [[String:Any]])
+                            }
+        }
+        
+    }
+    
+    func getBookmarks(completion: @escaping(_ data: [[String:Any]])->()) {
+        let url = ApiEndpoints.GET_BOOKMARKS.getUrl(pathParams: nil)
+        Alamofire.request(url,
+                          method: .get,
+                          parameters: nil,
+                          encoding: JSONEncoding.default,
+                          headers: ConstantApi.AUTHENTICATED_HEADER).validate().responseJSON { (response) in
+                            Logger.log(response)
+                            if response.error != nil {
+                                completion([])
+                            } else {
+                                completion(response.value as! [[String:Any]])
+                            }
+        }
+        
+    }
+    
+    func addBookmark(with id:Int, completion: @escaping(_ success: Bool)->()) {
+        let url = ApiEndpoints.ADD_BOOKMARK.getUrl(pathParams: ["\(id)"])
+        Alamofire.request(url,
+                          method: .post,
+                          parameters: nil,
+                          encoding: JSONEncoding.default,
+                          headers: ConstantApi.AUTHENTICATED_HEADER).validate().responseJSON { (response) in
+                            Logger.log(response)
+                            if response.error != nil {
+                                completion(false)
+                            } else {
+                                completion(true)
+                            }
+        }
+    }
+    
+    func deleteBookmark(with id:Int, completion: @escaping(_ success: Bool)->()) {
+        let url = ApiEndpoints.DELETE_BOOKMARK.getUrl(pathParams: ["\(id)"])
+        Alamofire.request(url,
+                          method: .post,
+                          parameters: nil,
+                          encoding: JSONEncoding.default,
+                          headers: ConstantApi.AUTHENTICATED_HEADER).validate().responseJSON { (response) in
+                            Logger.log(response)
+                            if response.error != nil {
+                                completion(false)
+                            } else {
+                                completion(true)
+                            }
+        }
+    }
+    
+    func getRecomanded(_ locations: [String], _ types: [String], _ word: String, completion: @escaping(_ data: [[String:Any]])->()) {
+        let body = [
+            "locations" : locations,
+            "types" : types,
+            "word" : word,
+            "jobAcceptanceType": "All"
+            ] as [String : Any]
+        let url = ApiEndpoints.GET_RECOMANDED.getUrl(pathParams: nil)
+        var header: HTTPHeaders?
+        if PersistancyManager.getToken() == nil || PersistancyManager.getToken() == "" {
+            getJobs(locations, types, word) { (response) in
+                completion(response)
+            }
+        } else {
+            header = ConstantApi.AUTHENTICATED_HEADER
+        }
+        Alamofire.request(url,
+                          method: .post,
+                          parameters: body,
+                          encoding: JSONEncoding.default,
+                          headers: header).validate().responseJSON { (response) in
+                            Logger.log(response)
+                            if response.error != nil {
+                                completion([])
+                            } else {
+                                completion(response.value as! [[String:Any]])
+                            }
+        }
+    }
+    
+    func getJobDetails(id: Int,  completion: @escaping(_ data: [String:Any])->()) {
+        let url = ApiEndpoints.GET_JOB_DETAILS.getUrl(pathParams: ["\(id)"])
+        Alamofire.request(url,
+                          method: .get,
+                          parameters: nil,
+                          encoding: JSONEncoding.default,
+                          headers: nil).validate().responseJSON { (response) in
+                            Logger.log(response)
+                            if response.error != nil {
+                                completion([:])
+                            } else {
+                                completion(response.value as! [String:Any])
+                            }
+        }
+    }
+    
+    func applyToJob(id: Int, completion: @escaping(_ success: Bool)->()) {
+        let url = ApiEndpoints.APPLY_TO_JOB.getUrl(pathParams: ["\(id)"])
+        var header: HTTPHeaders?
+        if PersistancyManager.getToken() == nil || PersistancyManager.getToken() == "" {
+            completion(false)
+            return
+        } else {
+            header = ConstantApi.AUTHENTICATED_HEADER
+        }
+        Alamofire.request(url,
+                          method: .post,
+                          parameters: nil,
+                          encoding: JSONEncoding.default,
+                          headers: header).validate().responseJSON { (response) in
+                            Logger.log(response)
+                            if response.error != nil {
+                                completion(false)
+                            } else {
+                                completion(true)
+                            }
+        }
+    }
+
+    
 }

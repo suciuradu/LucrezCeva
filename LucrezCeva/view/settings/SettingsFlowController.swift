@@ -22,6 +22,6 @@ class SettingsFlowController: Coordinator {
     
     func start() {
         let viewController = SettingsViewController.instantiate()
-        navigate(to: viewController, with: .push)
+        setRoot(to: viewController)
     }
 }

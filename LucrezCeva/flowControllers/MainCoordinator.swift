@@ -33,11 +33,11 @@ class MainCoordinator: Coordinator {
         addChild(coordinator: homeCoordinator!, with: .home)
         
         addJobCoordinator = AddJobFlowController(with: UINavigationController())
-        addJobCoordinator?.mainViewController?.tabBarItem = UITabBarItem(title: "ADAUGA ANUNT", image: UIImage.init(named: "add-unselected"), selectedImage: UIImage.init(named: "add-selected"))
+        addJobCoordinator?.mainViewController?.tabBarItem = UITabBarItem(title: "ADAUGA JOB", image: UIImage.init(named: "add-unselected"), selectedImage: UIImage.init(named: "add-selected"))
         addChild(coordinator: addJobCoordinator!, with: .addJob)
         
         settingsCoordinator = SettingsFlowController(with: UINavigationController())
-        settingsCoordinator?.mainViewController?.tabBarItem = UITabBarItem(title: "SETARI", image: UIImage.init(named: "settings-unselected"), selectedImage: UIImage.init(named: "settings-selected"))
+        settingsCoordinator?.mainViewController?.tabBarItem = UITabBarItem(title: "ISTORIC", image: UIImage.init(named: "logo-istoric"), selectedImage: UIImage.init(named: "logo-istoric"))
         addChild(coordinator: settingsCoordinator!, with: .settings)
         
         guard

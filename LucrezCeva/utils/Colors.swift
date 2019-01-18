@@ -15,6 +15,18 @@ class Colors {
         return UIColor.init(named: "colorGreen") ?? UIColor.green
     }()
     
+    static var colorDarkGray: UIColor = {
+        return UIColor.init(named: "colorDarkGray") ?? UIColor.darkGray
+    }()
+    
+    static var colorLightGray: UIColor = {
+        return UIColor.init(named: "colorLightGray") ?? UIColor.lightGray
+    }()
+    
+    static var colorLightWhite: UIColor = {
+        return UIColor.init(named: "colorLightWhite") ?? UIColor.white
+    }()
+    
     static var colorRed: UIColor = {
         return UIColor.init(named: "colorRed") ?? UIColor.red
     }()
@@ -33,10 +45,6 @@ class Colors {
     
     static var colorTopBlue: UIColor = {
         return UIColor.init(named: "colorTopBlue") ?? UIColor.blue
-    }()
-    
-    static var colorLightGray: UIColor = {
-        return UIColor.init(named: "colorLightGray") ?? UIColor.lightGray
     }()
     
     

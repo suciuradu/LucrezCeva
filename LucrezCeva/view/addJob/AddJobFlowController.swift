@@ -22,7 +22,7 @@ class AddJobFlowController: Coordinator {
     
     func start() {
         let viewController = AddJobViewController.instantiate()
-        navigate(to: viewController, with: .push)
+        setRoot(to: viewController)
     }
 }
 

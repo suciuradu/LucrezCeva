@@ -22,6 +22,20 @@ class HomeFlowController: Coordinator {
     
     func start() {
         let viewController = HomeViewController.instantiate()
-        navigate(to: viewController, with: .push)
+        let viewModel = HomeViewModel()
+        viewController.delegate = self
+        viewController.viewModel = viewModel
+        setRoot(to: viewController)
     }
+}
+
+extension HomeFlowController: HomeDelegate {
+    func jobCellTapped(job: JobItem) {
+        let viewController = DetailsJobViewController.instantiate()
+        let viewModel = DetailsJobViewModel(job.id!)
+        viewController.viewModel = viewModel
+        navigate(to: viewController, with: .push)
+        
+    }
+    
 }

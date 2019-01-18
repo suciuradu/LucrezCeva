@@ -13,9 +13,7 @@ class LoginResponse {
     var tokenType: String?
     var refreshToken: String?
     
-    init() {
-        //empty
-    }
+    init() {}
     
     init(_ data: [String:Any]) {
         if let accessToken = data[ApiContract.LoginResponse.ACCESS_TOKEN] as? String {

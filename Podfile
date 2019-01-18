@@ -13,6 +13,8 @@ target 'LucrezCeva' do
   pod 'Alamofire', '~> 4.7.3'
   pod 'TagListView', '~> 1.0'
   pod 'IQKeyboardManagerSwift'
+  pod 'Kingfisher', '~> 4.8.0'
+
 
 
 

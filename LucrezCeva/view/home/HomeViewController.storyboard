@@ -108,48 +108,15 @@
                                     <constraint firstAttribute="height" constant="30" id="t4M-5C-OyI"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdf-fi-70Z" customClass="TagListView" customModule="TagListView">
-                                <rect key="frame" x="10" y="220" width="365" height="24"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdf-fi-70Z">
+                                <rect key="frame" x="10" y="215" width="375" height="0.0"/>
                                 <color key="backgroundColor" red="0.91764705879999997" green="0.96078431369999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
-                                        <color key="value" red="1" green="0.60784313725490191" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="tagHighlightedBackgroundColor">
-                                        <color key="value" red="1" green="0.60784313725490191" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="tagSelectedBackgroundColor">
-                                        <color key="value" red="1" green="0.60784313725490191" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="11"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
-                                        <real key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
-                                        <real key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="marginY">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="marginX">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableRemoveButton" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="removeIconLineColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="1pk-1r-50f"/>
+                                </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="165" estimatedRowHeight="165" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vce-Jt-UqO">
-                                <rect key="frame" x="0.0" y="254" width="375" height="413"/>
+                                <rect key="frame" x="0.0" y="215" width="375" height="452"/>
                                 <color key="backgroundColor" red="0.91764705882352937" green="0.96078431372549022" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.91764705882352937" green="0.96078431372549022" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -164,7 +131,7 @@
                                                     <rect key="frame" x="15" y="12.5" width="345" height="140"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5Y-62-vIW">
-                                                            <rect key="frame" x="5" y="45" width="335" height="44"/>
+                                                            <rect key="frame" x="15" y="45" width="325" height="44"/>
                                                             <string key="text">Caut persoana care sa imi plimbe cainele 
 cu dragoste si placere.</string>
                                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
@@ -172,18 +139,18 @@ cu dragoste si placere.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cluj-Napoca" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0Z-fO-P2K">
-                                                            <rect key="frame" x="5" y="94" width="335" height="16.5"/>
-                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                                            <rect key="frame" x="40" y="100" width="300" height="18"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ocazional" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="55" translatesAutoresizingMaskIntoConstraints="NO" id="ydg-A8-mDb">
-                                                            <rect key="frame" x="5" y="17" width="64" height="14"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saptamanal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="80" translatesAutoresizingMaskIntoConstraints="NO" id="ydg-A8-mDb">
+                                                            <rect key="frame" x="15" y="17" width="80" height="16.5"/>
                                                             <color key="backgroundColor" name="colorPrimary"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="64" id="Z8r-zk-59K"/>
+                                                                <constraint firstAttribute="width" constant="80" id="Z8r-zk-59K"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                             <userDefinedRuntimeAttributes>
@@ -193,8 +160,8 @@ cu dragoste si placere.</string>
                                                             </userDefinedRuntimeAttributes>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 Dec 2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O92-Xa-IvT">
-                                                            <rect key="frame" x="84" y="17" width="59" height="14"/>
-                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                                            <rect key="frame" x="110" y="17" width="78" height="18"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                             <color key="textColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <userDefinedRuntimeAttributes>
@@ -203,20 +170,38 @@ cu dragoste si placere.</string>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </label>
+                                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookmark-false" highlightedImage="bookmark-true" translatesAutoresizingMaskIntoConstraints="NO" id="dS3-xJ-qn3">
+                                                            <rect key="frame" x="316" y="10" width="19" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="22" id="9lJ-Lj-gIa"/>
+                                                                <constraint firstAttribute="width" constant="19" id="R0v-Mi-hgv"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-icon" translatesAutoresizingMaskIntoConstraints="NO" id="4CX-NA-hSb">
+                                                            <rect key="frame" x="15" y="99" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="Fhz-EW-rtX"/>
+                                                                <constraint firstAttribute="height" constant="20" id="zn6-2R-fMS"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstItem="B5Y-62-vIW" firstAttribute="leading" secondItem="Eci-I2-hJk" secondAttribute="leading" constant="5" id="4FN-M1-5ho"/>
+                                                        <constraint firstItem="B5Y-62-vIW" firstAttribute="leading" secondItem="Eci-I2-hJk" secondAttribute="leading" constant="15" id="4FN-M1-5ho"/>
                                                         <constraint firstAttribute="trailing" secondItem="s0Z-fO-P2K" secondAttribute="trailing" constant="5" id="GCc-hi-mUz"/>
-                                                        <constraint firstItem="s0Z-fO-P2K" firstAttribute="top" secondItem="B5Y-62-vIW" secondAttribute="bottom" constant="5" id="LgR-ks-e21"/>
+                                                        <constraint firstItem="s0Z-fO-P2K" firstAttribute="leading" secondItem="4CX-NA-hSb" secondAttribute="trailing" constant="5" id="Hm7-X4-ZxG"/>
                                                         <constraint firstItem="O92-Xa-IvT" firstAttribute="top" secondItem="Eci-I2-hJk" secondAttribute="top" constant="17" id="ODr-R2-KRg"/>
                                                         <constraint firstAttribute="trailing" secondItem="B5Y-62-vIW" secondAttribute="trailing" constant="5" id="OVZ-WW-9Lx"/>
                                                         <constraint firstItem="ydg-A8-mDb" firstAttribute="top" secondItem="Eci-I2-hJk" secondAttribute="top" constant="17" id="Po6-Di-geg"/>
-                                                        <constraint firstItem="ydg-A8-mDb" firstAttribute="leading" secondItem="Eci-I2-hJk" secondAttribute="leading" constant="5" id="PyT-Ra-h8K"/>
+                                                        <constraint firstItem="ydg-A8-mDb" firstAttribute="leading" secondItem="Eci-I2-hJk" secondAttribute="leading" constant="15" id="PyT-Ra-h8K"/>
+                                                        <constraint firstAttribute="trailing" secondItem="dS3-xJ-qn3" secondAttribute="trailing" constant="10" id="XTT-ub-a0O"/>
+                                                        <constraint firstItem="s0Z-fO-P2K" firstAttribute="centerY" secondItem="4CX-NA-hSb" secondAttribute="centerY" id="Ygg-Fh-3B1"/>
+                                                        <constraint firstItem="4CX-NA-hSb" firstAttribute="top" secondItem="B5Y-62-vIW" secondAttribute="bottom" constant="10" id="ZMZ-X1-J4q"/>
                                                         <constraint firstItem="O92-Xa-IvT" firstAttribute="leading" secondItem="ydg-A8-mDb" secondAttribute="trailing" constant="15" id="aYq-7Q-Qli"/>
                                                         <constraint firstItem="B5Y-62-vIW" firstAttribute="top" secondItem="Eci-I2-hJk" secondAttribute="top" constant="45" id="gR2-G6-x5J"/>
                                                         <constraint firstAttribute="height" constant="140" id="ggJ-zg-SgX"/>
-                                                        <constraint firstItem="s0Z-fO-P2K" firstAttribute="leading" secondItem="Eci-I2-hJk" secondAttribute="leading" constant="5" id="r8Y-Av-YEb"/>
+                                                        <constraint firstItem="4CX-NA-hSb" firstAttribute="leading" secondItem="Eci-I2-hJk" secondAttribute="leading" constant="15" id="gnh-1j-9sG"/>
+                                                        <constraint firstItem="dS3-xJ-qn3" firstAttribute="top" secondItem="Eci-I2-hJk" secondAttribute="top" constant="10" id="hJo-u7-9yx"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -239,6 +224,13 @@ cu dragoste si placere.</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.91764705879999997" green="0.96078431369999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="bookmarkImage" destination="dS3-xJ-qn3" id="MQK-Hn-fb1"/>
+                                            <outlet property="daysSincePostedLabel" destination="O92-Xa-IvT" id="xfB-FR-8H5"/>
+                                            <outlet property="jobType" destination="ydg-A8-mDb" id="YU2-KX-A25"/>
+                                            <outlet property="locationLabel" destination="s0Z-fO-P2K" id="ITH-BI-P1B"/>
+                                            <outlet property="titleLabel" destination="B5Y-62-vIW" id="tAH-XY-ScO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -261,15 +253,15 @@ cu dragoste si placere.</string>
                         <color key="backgroundColor" red="0.91764705879999997" green="0.96078431369999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="tzI-8y-nVh" firstAttribute="trailing" secondItem="Vce-Jt-UqO" secondAttribute="trailing" id="61K-c7-F4t"/>
-                            <constraint firstItem="kdf-fi-70Z" firstAttribute="top" secondItem="wDT-Vx-2Zb" secondAttribute="bottom" constant="15" id="9jJ-un-X46"/>
-                            <constraint firstItem="kdf-fi-70Z" firstAttribute="trailing" secondItem="tzI-8y-nVh" secondAttribute="trailing" id="Caj-dd-jAk"/>
+                            <constraint firstItem="kdf-fi-70Z" firstAttribute="top" secondItem="wDT-Vx-2Zb" secondAttribute="bottom" constant="10" id="BbN-X0-Ihb"/>
+                            <constraint firstItem="Vce-Jt-UqO" firstAttribute="top" secondItem="kdf-fi-70Z" secondAttribute="bottom" id="IjU-ia-s5E"/>
+                            <constraint firstItem="kdf-fi-70Z" firstAttribute="trailing" secondItem="tzI-8y-nVh" secondAttribute="trailing" constant="10" id="NYF-1X-rvL"/>
                             <constraint firstItem="X3z-Ki-ero" firstAttribute="top" secondItem="tzI-8y-nVh" secondAttribute="top" constant="20" id="aEE-Tw-dAX"/>
-                            <constraint firstItem="Vce-Jt-UqO" firstAttribute="top" secondItem="kdf-fi-70Z" secondAttribute="bottom" constant="10" id="bBp-03-qWR"/>
                             <constraint firstItem="tzI-8y-nVh" firstAttribute="trailing" secondItem="uTS-3Z-Ad0" secondAttribute="trailing" constant="15" id="cBa-SL-YRP"/>
                             <constraint firstItem="nzi-QN-yFh" firstAttribute="top" secondItem="uTS-3Z-Ad0" secondAttribute="top" constant="45" id="hxq-98-V5U"/>
+                            <constraint firstItem="kdf-fi-70Z" firstAttribute="leading" secondItem="tzI-8y-nVh" secondAttribute="leading" constant="10" id="ipi-7e-QUq"/>
                             <constraint firstItem="uTS-3Z-Ad0" firstAttribute="top" secondItem="tzI-8y-nVh" secondAttribute="top" constant="15" id="jtH-Ka-4Bf"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Vce-Jt-UqO" secondAttribute="bottom" id="lEA-U9-vZH"/>
-                            <constraint firstItem="kdf-fi-70Z" firstAttribute="leading" secondItem="tzI-8y-nVh" secondAttribute="leading" constant="10" id="mLk-6k-ke0"/>
                             <constraint firstItem="X3z-Ki-ero" firstAttribute="leading" secondItem="tzI-8y-nVh" secondAttribute="leading" constant="15" id="miz-vV-o5r"/>
                             <constraint firstItem="Vce-Jt-UqO" firstAttribute="leading" secondItem="tzI-8y-nVh" secondAttribute="leading" id="qXJ-Oq-f45"/>
                             <constraint firstItem="tzI-8y-nVh" firstAttribute="trailing" secondItem="wDT-Vx-2Zb" secondAttribute="trailing" id="sU0-Xc-UK5"/>
@@ -288,6 +280,7 @@ cu dragoste si placere.</string>
                         <outlet property="selectedTabView" destination="EPS-gc-DsR" id="vTf-uj-ViK"/>
                         <outlet property="showFilters" destination="uTS-3Z-Ad0" id="6pr-bd-b21"/>
                         <outlet property="tagList" destination="kdf-fi-70Z" id="6oW-c7-euv"/>
+                        <outlet property="tagListViewHeightConstraint" destination="1pk-1r-50f" id="57n-v7-xdl"/>
                         <outlet property="topView" destination="wDT-Vx-2Zb" id="bsS-3O-ma4"/>
                     </connections>
                 </viewController>
@@ -307,7 +300,7 @@ cu dragoste si placere.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.19041630993150685" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9Y-MK-3xt" customClass="RoundedView" customModule="doxtar" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9Y-MK-3xt" customClass="RoundedView" customModule="LucrezCeva" customModuleProvider="target">
                                 <rect key="frame" x="36" y="68" width="303" height="410"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filtre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfR-FQ-GS9">
@@ -363,10 +356,10 @@ cu dragoste si placere.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFr-8u-CZA">
-                                        <rect key="frame" x="258" y="184" width="20" height="20"/>
+                                        <rect key="frame" x="253" y="181.5" width="25" height="25"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="DtR-jP-uts"/>
-                                            <constraint firstAttribute="width" constant="20" id="m49-8X-9Sf"/>
+                                            <constraint firstAttribute="height" constant="25" id="DtR-jP-uts"/>
+                                            <constraint firstAttribute="width" constant="25" id="m49-8X-9Sf"/>
                                         </constraints>
                                         <state key="selected" backgroundImage="Rectangle"/>
                                         <userDefinedRuntimeAttributes>
@@ -385,10 +378,10 @@ cu dragoste si placere.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aw-Rk-fkI">
-                                        <rect key="frame" x="258" y="214" width="20" height="20"/>
+                                        <rect key="frame" x="253" y="211.5" width="25" height="25"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="7t5-9I-6mg"/>
-                                            <constraint firstAttribute="height" constant="20" id="IpY-qR-LXX"/>
+                                            <constraint firstAttribute="width" constant="25" id="7t5-9I-6mg"/>
+                                            <constraint firstAttribute="height" constant="25" id="IpY-qR-LXX"/>
                                         </constraints>
                                         <state key="selected" backgroundImage="Rectangle"/>
                                         <userDefinedRuntimeAttributes>
@@ -407,10 +400,10 @@ cu dragoste si placere.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1V3-nJ-9Hc">
-                                        <rect key="frame" x="258" y="244" width="20" height="20"/>
+                                        <rect key="frame" x="253" y="241.5" width="25" height="25"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="TFA-cL-vtS"/>
-                                            <constraint firstAttribute="height" constant="20" id="cbL-M5-EjF"/>
+                                            <constraint firstAttribute="width" constant="25" id="TFA-cL-vtS"/>
+                                            <constraint firstAttribute="height" constant="25" id="cbL-M5-EjF"/>
                                         </constraints>
                                         <state key="selected" backgroundImage="Rectangle"/>
                                         <userDefinedRuntimeAttributes>
@@ -429,10 +422,10 @@ cu dragoste si placere.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzj-dr-Zgw">
-                                        <rect key="frame" x="258" y="275" width="20" height="20"/>
+                                        <rect key="frame" x="253" y="272.5" width="25" height="25"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="UYX-Cr-QDb"/>
-                                            <constraint firstAttribute="height" constant="20" id="lLO-VE-AWL"/>
+                                            <constraint firstAttribute="width" constant="25" id="UYX-Cr-QDb"/>
+                                            <constraint firstAttribute="height" constant="25" id="lLO-VE-AWL"/>
                                         </constraints>
                                         <state key="selected" backgroundImage="Rectangle"/>
                                         <userDefinedRuntimeAttributes>
@@ -457,6 +450,9 @@ cu dragoste si placere.</string>
                                             <constraint firstAttribute="height" constant="36" id="z3f-3l-fJe"/>
                                         </constraints>
                                         <state key="normal" title="aplica"/>
+                                        <connections>
+                                            <action selector="aplicaFiltersDismiss:" destination="WA8-zE-nJc" eventType="touchUpInside" id="LVm-6u-N8D"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -515,7 +511,12 @@ cu dragoste si placere.</string>
                         <viewLayoutGuide key="safeArea" id="zXR-Gz-ldy"/>
                     </view>
                     <connections>
+                        <outlet property="cityTextField" destination="9qe-07-7ER" id="miY-Km-GKt"/>
+                        <outlet property="lunarButton" destination="1V3-nJ-9Hc" id="Tm3-eN-IOx"/>
+                        <outlet property="ocazionalButton" destination="Vzj-dr-Zgw" id="Kfn-ue-LJ1"/>
+                        <outlet property="saptamanalButton" destination="2aw-Rk-fkI" id="cRm-Np-XV1"/>
                         <outlet property="tapDismissView" destination="nzZ-Zf-JPF" id="XMG-M5-UPk"/>
+                        <outlet property="zilnicButton" destination="xFr-8u-CZA" id="Lp8-nf-p1j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pZ-61-1Ec" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -527,6 +528,9 @@ cu dragoste si placere.</string>
         <image name="FILTER" width="30" height="30"/>
         <image name="LucrezCeva" width="70" height="56"/>
         <image name="Rectangle" width="20" height="20"/>
+        <image name="bookmark-false" width="15" height="18"/>
+        <image name="bookmark-true" width="15" height="18"/>
+        <image name="location-icon" width="16" height="21"/>
         <image name="name" width="211" height="41"/>
         <namedColor name="colorPrimary">
             <color red="0.18431372549019609" green="0.62745098039215685" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

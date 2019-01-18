@@ -28,6 +28,14 @@
 		F3164DDF21AC4F1500D06251 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3164DDD21AC4F1500D06251 /* ViewController.swift */; };
 		F3164DE021AC4F1500D06251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3164DDE21AC4F1500D06251 /* Main.storyboard */; };
 		F3164DE321AC519700D06251 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3164DE221AC519700D06251 /* Logger.swift */; };
+		F318A9C721EFCFCB00794B9E /* JobItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318A9C621EFCFCB00794B9E /* JobItem.swift */; };
+		F318A9C921EFD20100794B9E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318A9C821EFD20100794B9E /* HomeViewModel.swift */; };
+		F318A9CB21F15C4400794B9E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318A9CA21F15C4400794B9E /* Helper.swift */; };
+		F318A9CE21F1E1ED00794B9E /* DetailsJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318A9CD21F1E1ED00794B9E /* DetailsJobViewController.swift */; };
+		F318A9D021F1E1FA00794B9E /* DetailsJobViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F318A9CF21F1E1FA00794B9E /* DetailsJobViewController.storyboard */; };
+		F318A9D221F1E22500794B9E /* DetailsJobFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318A9D121F1E22500794B9E /* DetailsJobFlowController.swift */; };
+		F318A9D421F1E33C00794B9E /* DetailsJobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318A9D321F1E33C00794B9E /* DetailsJobViewModel.swift */; };
+		F318A9D621F1FAE400794B9E /* JobDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318A9D521F1FAE300794B9E /* JobDetailsModel.swift */; };
 		F3400AAA21B5C5CC00903545 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3400AA921B5C5CC00903545 /* Colors.xcassets */; };
 		F3400AAD21B5C68500903545 /* CompleteAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3400AAC21B5C68500903545 /* CompleteAccountViewController.swift */; };
 		F3400AAF21B5C69400903545 /* CompleteAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3400AAE21B5C69400903545 /* CompleteAccountViewController.storyboard */; };
@@ -86,6 +94,14 @@
 		F3164DDD21AC4F1500D06251 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3164DDE21AC4F1500D06251 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F3164DE221AC519700D06251 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		F318A9C621EFCFCB00794B9E /* JobItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobItem.swift; sourceTree = "<group>"; };
+		F318A9C821EFD20100794B9E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F318A9CA21F15C4400794B9E /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F318A9CD21F1E1ED00794B9E /* DetailsJobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsJobViewController.swift; sourceTree = "<group>"; };
+		F318A9CF21F1E1FA00794B9E /* DetailsJobViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsJobViewController.storyboard; sourceTree = "<group>"; };
+		F318A9D121F1E22500794B9E /* DetailsJobFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsJobFlowController.swift; sourceTree = "<group>"; };
+		F318A9D321F1E33C00794B9E /* DetailsJobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsJobViewModel.swift; sourceTree = "<group>"; };
+		F318A9D521F1FAE300794B9E /* JobDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsModel.swift; sourceTree = "<group>"; };
 		F3400AA921B5C5CC00903545 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F3400AAC21B5C68500903545 /* CompleteAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteAccountViewController.swift; sourceTree = "<group>"; };
 		F3400AAE21B5C69400903545 /* CompleteAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompleteAccountViewController.storyboard; sourceTree = "<group>"; };
@@ -161,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				F307724921D980B8005D09C7 /* LoginResponse.swift */,
+				F318A9C621EFCFCB00794B9E /* JobItem.swift */,
+				F318A9D521F1FAE300794B9E /* JobDetailsModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -188,9 +206,9 @@
 			children = (
 				F307724821D980A2005D09C7 /* model */,
 				F307724121D97D9A005D09C7 /* network */,
-				F3B75E2521C437B300482CD0 /* viewModels */,
 				F3B75E1721C4337300482CD0 /* flowControllers */,
 				F3164DD021AC3D0100D06251 /* utils */,
+				F3B75E2521C437B300482CD0 /* viewModels */,
 				F3164DC521AC3C1600D06251 /* view */,
 				F3164DB021AC3BF100D06251 /* AppDelegate.swift */,
 				F3164DBA21AC3BF300D06251 /* Assets.xcassets */,
@@ -205,6 +223,7 @@
 		F3164DC521AC3C1600D06251 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F318A9CC21F1E1BB00794B9E /* detailsJob */,
 				F3CD5C5C21D3E7D9005A2213 /* settings */,
 				F3CD5C5B21D3E7CE005A2213 /* addJob */,
 				F3CD5C5A21D3E7C7005A2213 /* home */,
@@ -246,6 +265,7 @@
 				F3400AB521B5DA8800903545 /* PrimaryButton.swift */,
 				F307724B21D99037005D09C7 /* PersistancyManager.swift */,
 				F35744C321DD344C00D50E7C /* DynamicValue.swift */,
+				F318A9CA21F15C4400794B9E /* Helper.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -267,6 +287,16 @@
 				F3164DDD21AC4F1500D06251 /* ViewController.swift */,
 			);
 			path = initial;
+			sourceTree = "<group>";
+		};
+		F318A9CC21F1E1BB00794B9E /* detailsJob */ = {
+			isa = PBXGroup;
+			children = (
+				F318A9D121F1E22500794B9E /* DetailsJobFlowController.swift */,
+				F318A9CD21F1E1ED00794B9E /* DetailsJobViewController.swift */,
+				F318A9CF21F1E1FA00794B9E /* DetailsJobViewController.storyboard */,
+			);
+			path = detailsJob;
 			sourceTree = "<group>";
 		};
 		F3400AAB21B5C66D00903545 /* completeAccount */ = {
@@ -317,6 +347,8 @@
 				F3B75E2621C4382600482CD0 /* CreateAccountViewModel.swift */,
 				F3B75E2A21C43B9800482CD0 /* LoginViewModel.swift */,
 				F3B75E2E21C441AB00482CD0 /* CompleteAccountViewModel.swift */,
+				F318A9C821EFD20100794B9E /* HomeViewModel.swift */,
+				F318A9D321F1E33C00794B9E /* DetailsJobViewModel.swift */,
 			);
 			path = viewModels;
 			sourceTree = "<group>";
@@ -419,6 +451,7 @@
 				F3400AAA21B5C5CC00903545 /* Colors.xcassets in Resources */,
 				F3CD5C6221D3E804005A2213 /* HomeViewController.storyboard in Resources */,
 				F3164DCA21AC3C5400D06251 /* LoginViewController.storyboard in Resources */,
+				F318A9D021F1E1FA00794B9E /* DetailsJobViewController.storyboard in Resources */,
 				F3400AAF21B5C69400903545 /* CompleteAccountViewController.storyboard in Resources */,
 				F3164DCD21AC3C8500D06251 /* CreateAccountViewController.storyboard in Resources */,
 			);
@@ -437,6 +470,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BRYXBanner/BRYXBanner.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
 			);
@@ -445,6 +479,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BRYXBanner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
 			);
@@ -483,7 +518,10 @@
 				F3400AB121B5C77600903545 /* GradientExtension.swift in Sources */,
 				F307724521D97F26005D09C7 /* ApiEndpoints.swift in Sources */,
 				F35744C421DD344C00D50E7C /* DynamicValue.swift in Sources */,
+				F318A9D421F1E33C00794B9E /* DetailsJobViewModel.swift in Sources */,
+				F318A9CE21F1E1ED00794B9E /* DetailsJobViewController.swift in Sources */,
 				F3CD5C7021D539D6005A2213 /* BaseTabBarController.swift in Sources */,
+				F318A9D221F1E22500794B9E /* DetailsJobFlowController.swift in Sources */,
 				F3CD5C6021D3E7FB005A2213 /* HomeViewController.swift in Sources */,
 				F3CD5C7221D5492E005A2213 /* UISearchBarExtension.swift in Sources */,
 				F3400AB821B5DE1900903545 /* HideKeyboardExtension.swift in Sources */,
@@ -501,6 +539,7 @@
 				F3CD5C5921D3C88A005A2213 /* UIWindow.swift in Sources */,
 				F3CD5C5E21D3E7F0005A2213 /* HomeFlowController.swift in Sources */,
 				F3B75E1A21C433A000482CD0 /* Coordinator.swift in Sources */,
+				F318A9D621F1FAE400794B9E /* JobDetailsModel.swift in Sources */,
 				F3164DE321AC519700D06251 /* Logger.swift in Sources */,
 				F3B75E2B21C43B9800482CD0 /* LoginViewModel.swift in Sources */,
 				F3B75E2F21C441AB00482CD0 /* CompleteAccountViewModel.swift in Sources */,
@@ -508,12 +547,15 @@
 				F3164DC821AC3C4100D06251 /* LoginViewController.swift in Sources */,
 				F3CD5C6421D3E813005A2213 /* AddJobFlowController.swift in Sources */,
 				F3CD5C6C21D3E84B005A2213 /* SettingsViewController.swift in Sources */,
+				F318A9CB21F15C4400794B9E /* Helper.swift in Sources */,
 				F3B75E1E21C4343800482CD0 /* MainCoordinator.swift in Sources */,
 				F307724C21D99037005D09C7 /* PersistancyManager.swift in Sources */,
 				F3B75E2921C439DB00482CD0 /* LoginFlowController.swift in Sources */,
+				F318A9C721EFCFCB00794B9E /* JobItem.swift in Sources */,
 				F3400AB421B5D1C000903545 /* TextFieldExtension.swift in Sources */,
 				F3B75E2421C436AE00482CD0 /* ViewControllerExtension.swift in Sources */,
 				F3164DB121AC3BF100D06251 /* AppDelegate.swift in Sources */,
+				F318A9C921EFD20100794B9E /* HomeViewModel.swift in Sources */,
 				F3B75E2721C4382600482CD0 /* CreateAccountViewModel.swift in Sources */,
 				F3164DD521AC3D3D00D06251 /* BaseViewController.swift in Sources */,
 				F3CD5C6A21D3E842005A2213 /* SettingsFlowController.swift in Sources */,
